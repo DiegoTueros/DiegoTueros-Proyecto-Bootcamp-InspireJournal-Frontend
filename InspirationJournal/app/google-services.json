@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "581585053975",
+    "project_id": "inspirationjournal-a5b73",
+    "storage_bucket": "inspirationjournal-a5b73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581585053975:android:27b50f5f5f52d462d02f52",
+        "android_client_info": {
+          "package_name": "com.nttdata.inspirationjournal2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "581585053975-f1s1fvh3vrbu9cdhk9o7a9h04gf1j3bt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlE3S3QJuGdz8M4ksEnHqUjloBaxvs-1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "581585053975-f1s1fvh3vrbu9cdhk9o7a9h04gf1j3bt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
