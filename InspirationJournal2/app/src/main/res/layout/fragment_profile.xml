@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".view.profile.ProfileFragment"
+android:background="@color/background">
+
+    <io.github.florent37.shapeofview.shapes.CircleView
+        android:id="@+id/circleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/ic_wizard">
+
+        </ImageView>
+
+    </io.github.florent37.shapeofview.shapes.CircleView>
+<io.github.florent37.shapeofview.shapes.ArcView
+    android:id="@+id/arcView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="2dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:shape_arc_height="40dp"
+    app:shape_arc_position="bottom">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/background_profile_top">
+    </FrameLayout>
+</io.github.florent37.shapeofview.shapes.ArcView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_extrabold"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        tools:text="Diego Tueros"
+        android:textColor="@color/principal"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_logout"
+        app:layout_constraintTop_toBottomOf="@+id/circleView"></TextView>
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_logout"
+        style="@style/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_button"
+        android:text="@string/log_out"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:rippleColor="@color/background"></com.google.android.material.button.MaterialButton>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

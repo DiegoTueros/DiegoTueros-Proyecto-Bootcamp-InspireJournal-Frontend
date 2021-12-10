@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.inspirationdetail.InspirationDetailFragment">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ProgressBar>
+
+        <ImageButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/favorites_gradient"
+            android:elevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="20dp">
+        </ImageButton>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/backspace"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/ic_backspace_photo" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/ic_delete_photo" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <ImageView
+                android:id="@+id/imageCategory"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/ic_only_camera" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageCategory"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            android:elevation="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textSize="19dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"></TextView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="30dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description">
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                tools:src="@drawable/imagen_prueba"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description"
+                app:shapeAppearanceOverlay="@style/roundedImageView" />
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

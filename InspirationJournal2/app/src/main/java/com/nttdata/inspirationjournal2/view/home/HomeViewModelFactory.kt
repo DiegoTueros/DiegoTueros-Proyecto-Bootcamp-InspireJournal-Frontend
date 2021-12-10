@@ -1,0 +1,18 @@
+package com.nttdata.inspirationjournal2.view.home
+
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import com.nttdata.inspirationjournal2.data.InspirationRepository
+import java.lang.IllegalArgumentException
+
+class HomeViewModelFactory(
+     val inspirationRepository: InspirationRepository
+): ViewModelProvider.Factory {
+
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        if (modelClass.isAssignableFrom(HomeViewModel::class.java)){
+            return  HomeViewModel(inspirationRepository) as T
+        }
+        throw IllegalArgumentException("Unknown ViewModel class")
+    }
+}

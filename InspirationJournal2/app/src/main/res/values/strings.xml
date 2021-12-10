@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Inspire Journal</string>
+    <string name="home_title">Inicio</string>
+    <string name="favorites_title">Favoritos</string>
+    <string name="profile_title">Perfil</string>
+    <string name="empty_home">No tienes inspiraciones guardadas</string>
+    <string name="load_inspirations">Cargando</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">LOG IN</string>
+    <string name="signup">SIGN UP</string>
+    <string name="add_inspiration">Agregar Inspiración</string>
+    <string name="save_inspiration">GUARDAR</string>
+    <string name="add_inspiration_title">Título</string>
+
+    <string name="title_activity_add_inspiration">AddInspirationActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="add_inspiration_description">Mi inspiración ...</string>
+    <string name="log_out">Cerrar Sesión</string>
+    <string name="log_in">Iniciar Sesión</string>
+    <string name="sign_up">Registrar</string>
+
+</resources>

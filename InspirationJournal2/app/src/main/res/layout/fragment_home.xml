@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.home.HomeFragment">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view_inspiration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iconifiedByDefault="false"
+        app:queryHint="Buscar inspiración"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintCircleRadius="20dp"
+        android:background="@drawable/background_search"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        >
+    </androidx.appcompat.widget.SearchView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_inspiration_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view_inspiration"
+        app:layout_constraintVertical_bias="0.0"
+        app:spanCount="2"
+        tools:itemCount="8"
+        tools:listitem="@layout/item_inspiration" />
+
+    <ImageButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/add_gradient"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="20dp">
+    </ImageButton>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view_inspiration"
+        android:visibility="gone">
+    </ProgressBar>
+
+    <ImageView
+        android:id="@+id/image_empty_home"
+        android:layout_width="@dimen/empty_inspiration_size"
+        android:layout_height="@dimen/empty_inspiration_size"
+        android:src="@drawable/ic_small_logo_inspire_journal"
+        app:layout_constraintBottom_toTopOf="@+id/tv_empty_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_empty_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/empty_home"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        app:layout_constraintBottom_toBottomOf="@+id/recycler_inspiration_list"
+        app:layout_constraintEnd_toEndOf="@+id/recycler_inspiration_list"
+        app:layout_constraintStart_toStartOf="@+id/recycler_inspiration_list"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/load_inspirations"
+        style="@style/button"
+        android:background="@drawable/background_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_empty_list" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="image_empty_home,tv_empty_list,btn_load" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
