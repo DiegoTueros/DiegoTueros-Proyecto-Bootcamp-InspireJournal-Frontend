@@ -22,17 +22,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"></ProgressBar>
 
-        <ImageButton
-            android:id="@+id/floatingActionButton"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="@drawable/favorites_gradient"
-            android:elevation="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_margin="20dp">
-        </ImageButton>
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
@@ -54,14 +43,14 @@
                 tools:srcCompat="@drawable/ic_backspace_photo" />
 
             <ImageView
-                android:id="@+id/delete"
+                android:id="@+id/heart"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_margin="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:srcCompat="@drawable/ic_delete_photo" />
+                tools:srcCompat="@drawable/ic_heart_fav" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

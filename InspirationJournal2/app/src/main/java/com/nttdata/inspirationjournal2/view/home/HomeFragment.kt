@@ -92,7 +92,7 @@ class HomeFragment : Fragment() {
         val intent = Intent(requireActivity(), DetailActivity::class.java)
         intent.putExtras(bundle)
         requireActivity().startActivity(intent)
-        onDestroy()
+        requireActivity().finish()
     }
 
 }
