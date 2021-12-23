@@ -112,7 +112,7 @@ class InspirationDetailFragment : Fragment() {
             binding.date.setTextColor(Color.parseColor(category.color_primary))
             binding.description.setBackgroundResource(descriptionBackground(category.icono))
             binding.backspace.setImageResource(backspace(category.icono))
-            binding.delete.setImageResource(delete(category.icono))
+            binding.heart.setImageResource(favoriteIcon(status))
 
         }
     }

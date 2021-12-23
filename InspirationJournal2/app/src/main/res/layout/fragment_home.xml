@@ -6,20 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".view.home.HomeFragment">
 
-    <androidx.appcompat.widget.SearchView
-        android:id="@+id/search_view_inspiration"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:iconifiedByDefault="false"
-        app:queryHint="Buscar inspiración"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintCircleRadius="20dp"
-        android:background="@drawable/background_search"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="10dp"
-        >
-    </androidx.appcompat.widget.SearchView>
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_inspiration_list"
         android:layout_width="match_parent"

@@ -14,6 +14,9 @@
         android:theme="@style/Theme.InspirationJournal2"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".popup.PopUpWindowActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.addinspiration.AddInspirationActivity"
             android:exported="false"
             android:label="@string/title_activity_add_inspiration"

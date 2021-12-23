@@ -50,18 +50,6 @@ fun backspace(image: String): Int{
     return R.drawable.ic_backspace_music
 }
 
-fun delete(image: String): Int{
-
-    when (image){
-        "ic_guitar" -> return R.drawable.ic_delete_music
-        "ic_camera" -> return R.drawable.ic_delete_photo
-        "ic_paintbrush" -> return R.drawable.ic_delete_drawing
-        "ic_wing" -> return R.drawable.ic_delete_poem
-    }
-
-    return R.drawable.ic_backspace_music
-}
-
 fun favoriteIcon( isFavorite: Boolean): Int{
     when(isFavorite){
         true -> return R.drawable.ic_heart_purple
